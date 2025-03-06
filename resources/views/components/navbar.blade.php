@@ -44,10 +44,11 @@
         <div  class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Profile</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">My Project</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Follow Me</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">News</a>
+              <x-nav-link-mobile href="/profile" :active="request()->is('profile')">Profile</x-nav-link-mobile>
+              <x-nav-link-mobile href="/projek" :active="request()->is('projek')">projek</x-nav-link-mobile>
+              <x-nav-link-mobile href="/follow" :active="request()->is('follow')">follow</x-nav-link-mobile>
+              <x-nav-link-mobile href="/news" :active="request()->is('news')">news</x-nav-link-mobile>
+              
             </div>
             <div class="py-6">
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
