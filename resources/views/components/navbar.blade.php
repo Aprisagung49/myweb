@@ -16,9 +16,9 @@
       </div>
       <div  class="hidden lg:flex lg:gap-x-12">
         <x-nav-link href="/profile" :active="request()->is('profile')">Profile</x-nav-link>
-        <x-nav-link href="/projek" :active="request()->is('projek')">projek</x-nav-link>
-        <x-nav-link href="/follow" :active="request()->is('follow')">follow</x-nav-link>
-        <x-nav-link href="/news" :active="request()->is('news')">news</x-nav-link>
+        <x-nav-link href="/projek" :active="request()->is('projek')">My Projek</x-nav-link>
+        <x-nav-link href="/follow" :active="request()->is('follow')">Follow Now</x-nav-link>
+        <x-nav-link href="/news" :active="request()->is('news')">News</x-nav-link>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>

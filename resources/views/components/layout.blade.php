@@ -3,7 +3,7 @@
 <x-head></x-head>
 <body>
     <div class="bg-white">
-        <x-h1>{{$title}}</x-h1>
+        {{-- <x-h1>{{$title}}</x-h1> --}}
        <x-navbar></x-navbar>
         {{ $slot }}
       </div>

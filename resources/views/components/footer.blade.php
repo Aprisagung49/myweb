@@ -8,10 +8,11 @@
             <div class="mb-6 md:mb-0">
                 <h2 class="text-lg font-bold mb-2">Navigasi</h2>
                 <ul>
-                    <li><a href="#" class="text-gray-400 hover:text-white">Beranda</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white">Tentang</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white">Kontak</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Profile</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">My Project</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Follow</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">News</a></li>
                 </ul>
             </div>
             <div>

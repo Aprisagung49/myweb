@@ -1,5 +1,6 @@
   <x-layout>
     <x-slot:title>{{ $title }}</x-slot:title>
+    <div class="relative isolate px-6 pt-14 lg:px-8">
   <div class="bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <h2 class="text-center text-lg/8 font-semibold text-gray-900">Follow Me:</h2>
@@ -11,5 +12,6 @@
         <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158" height="48">
       </div>
     </div>
+  </div>
   </div>
 </x-layout>
