@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<x-head></x-head>
-<body>
-  <x-navbar></x-navbar>
-  <div class="bg-white py-24 sm:py-32">
+<x-layout>
+  <x-slot:title>{{ $title }}</x-slot:title>
+<div class="bg-white py-24 sm:py-32">
     <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
       <div class="max-w-xl">
         <h2 class="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">Meet our leadership</h2>
@@ -24,6 +21,4 @@
       </ul>
     </div>
   </div>  
-  <x-footer></x-footer>
-</body>
-</html>
+</x-layout>

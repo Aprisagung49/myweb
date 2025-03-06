@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<x-head></x-head>
-<body>
-  <x-navbar></x-navbar>
+  <x-layout>
+    <x-slot:title>{{ $title }}</x-slot:title>
   <div class="bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <h2 class="text-center text-lg/8 font-semibold text-gray-900">Follow Me:</h2>
@@ -15,7 +12,4 @@
       </div>
     </div>
   </div>
- 
-  <x-footer></x-footer>
-</body>
-</html>
+</x-layout>
