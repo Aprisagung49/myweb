@@ -4,5 +4,5 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="//unpkg.com/alpinejs" defer></script>
     @vite('resources/css/app.css')
-    <title>Document</title>
+    <title>MyWEB2025</title>
 </head>
