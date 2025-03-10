@@ -1,7 +1,10 @@
 <?php
 
 
-use App\Models\News;
+
+
+
+use App\Models\Article;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 
@@ -19,11 +22,11 @@ Route::get('/follow', function () {
     return view('follow', ['title' => 'Halaman Follow Me']);
 });
 
-Route::get('/news/{slug}', function($slug){
-    $new = News::find($slug);
-    return view('new', ['title' => $new['title'], 'new' => $new] );
+Route::get('/articles/{article:slug}', function(Article $article){
+    // $article = Article::find($id);
+    return view('article', ['title' => $article['title'], 'article' => $article] );
 });
 
-Route::get('/news', function () {
-    return view('news', ['title' => 'Halaman Beritaku', 'news' => News::all()]);
+Route::get('/articles', function () {
+    return view('articles', ['title' => 'Halaman Beritaku', 'articles' => Article::all()]);
 });
