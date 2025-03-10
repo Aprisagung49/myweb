@@ -14,8 +14,7 @@
                     <div class="flex items-center gap-x-4 text-xs">
                         <p class="text-gray-500">{{ $article->created_at->diffForHumans() }}</p>
                         <a href="#"
-                            class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">WEB
-                            NEWS</a>
+                            class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{{ $article->category->name }}</a>
                     </div>
                     <div class="group relative">
                         <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
@@ -38,7 +37,7 @@
                                     {{ $article->author->name }}
                                 </a>
                             </p>
-                            <p class="text-gray-600">IT PROGRAMING</p>
+                            <p class="text-gray-600"></p>
                         </div>
                     </div>
                 </article>

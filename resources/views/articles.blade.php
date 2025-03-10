@@ -15,9 +15,8 @@
                         <div class="flex items-center gap-x-4 text-xs">
                             <time datetime="2020-03-16"
                                 class="text-gray-500">{{ $article->created_at->diffForHumans() }}</time>
-                            <a href="#"
-                                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">WEB
-                                NEWS</a>
+                            <a href="/categories/{{ $article->category->slug }}"
+                                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{{ $article->category->name }}</a>
                         </div>
                         <div class="group relative">
                             <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
@@ -37,12 +36,12 @@
                                 alt="" class="size-10 rounded-full bg-gray-50">
                             <div class="text-sm/6">
                                 <p class="font-semibold text-gray-900 hover:underline">
-                                    <a href="/authors/{{ $article->author->id }}">
+                                    <a href="/authors/{{ $article->author->username }}">
                                         <span class="absolute inset-0"></span>
                                         {{ $article->author->name }}
                                     </a>
                                 </p>
-                                <p class="text-gray-600">IT PROGRAMING</p>
+                                <p class="text-gray-600"></p>
                             </div>
                         </div>
                     </article>
