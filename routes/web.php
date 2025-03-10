@@ -4,6 +4,7 @@
 
 
 
+use App\Models\User;
 use App\Models\Article;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
@@ -25,6 +26,10 @@ Route::get('/follow', function () {
 Route::get('/articles/{article:slug}', function(Article $article){
     // $article = Article::find($id);
     return view('article', ['title' => $article['title'], 'article' => $article] );
+});
+Route::get('/authors/{user}', function(User $user){
+    // $article = Article::find($id);
+    return view('articles', ['title' => 'Artikel By ' . $user->name , 'articles' => $user->articles] );
 });
 
 Route::get('/articles', function () {

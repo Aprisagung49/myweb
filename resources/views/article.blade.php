@@ -35,7 +35,7 @@
                             <p class="font-semibold text-gray-900">
                                 <a href="#">
                                     <span class="absolute inset-0"></span>
-                                    {{ $article['author'] }}
+                                    {{ $article->author->name }}
                                 </a>
                             </p>
                             <p class="text-gray-600">IT PROGRAMING</p>

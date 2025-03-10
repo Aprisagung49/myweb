@@ -3,8 +3,9 @@
     <div class="bg-white py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:mx-0">
-                <h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Artikel Terkini
-                </h2>
+                <h1 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+                    {{ $title }}
+                </h1>
                 <p class="mt-2 text-lg/8 text-gray-600">Learn Now!.</p>
             </div>
             <div
@@ -35,10 +36,10 @@
                             <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                                 alt="" class="size-10 rounded-full bg-gray-50">
                             <div class="text-sm/6">
-                                <p class="font-semibold text-gray-900">
-                                    <a href="#">
+                                <p class="font-semibold text-gray-900 hover:underline">
+                                    <a href="/authors/{{ $article->author->id }}">
                                         <span class="absolute inset-0"></span>
-                                        {{ $article['author'] }}
+                                        {{ $article->author->name }}
                                     </a>
                                 </p>
                                 <p class="text-gray-600">IT PROGRAMING</p>
