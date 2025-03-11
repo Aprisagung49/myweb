@@ -40,6 +40,6 @@ Route::get('/categories/{category:slug}', function(Category $category){
 });
 
 Route::get('/articles', function () {
-    // $articles = Article::with(['author','category'])->latest()->get();
-    return view('articles', ['title' => 'Halaman Beritaku', 'articles' => Article::all()]);
+
+    return view('articles', ['title' => 'Halaman Beritaku', 'articles'=> Article::filter(request(['search', 'category', 'author']))->latest()->get()]);
 });
