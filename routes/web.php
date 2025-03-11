@@ -41,5 +41,5 @@ Route::get('/categories/{category:slug}', function(Category $category){
 
 Route::get('/articles', function () {
 
-    return view('articles', ['title' => 'Halaman Beritaku', 'articles'=> Article::filter(request(['search', 'category', 'author']))->latest()->get()]);
+    return view('articles', ['title' => 'Halaman Beritaku', 'articles'=> Article::filter(request(['search', 'category', 'author']))->latest()->paginate(6)->withQueryString()]);
 });
