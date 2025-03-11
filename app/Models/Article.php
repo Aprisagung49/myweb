@@ -14,6 +14,9 @@ class Article extends Model
     protected $table = 'article'; // insisialisasi agar laravel mengarah ke table Article bukan Articles
     protected $fillable = ['title', 'author', 'slug', 'body'];
 
+    protected $with = ['author', 'category'];
+
+
     public function author(): BelongsTo
     {
         return $this->belongsTo(User::class);

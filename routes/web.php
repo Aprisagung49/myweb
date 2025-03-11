@@ -30,13 +30,16 @@ Route::get('/articles/{article:slug}', function(Article $article){
 });
 Route::get('/authors/{user:username}', function(User $user){
     // $article = Article::find($id);
+    // $articles = $user->articles->load('category', 'author');
     return view('articles', ['title' => count($user->articles). ' Artikel Dari ' . $user->name , 'articles' => $user->articles] );
 });
 Route::get('/categories/{category:slug}', function(Category $category){
     // $article = Article::find($id);
+    // $categories = $category->articles->load('category', 'author');
     return view('articles', ['title' => ' Artikel By ' . $category->name , 'articles' => $category->articles] );
 });
 
 Route::get('/articles', function () {
+    // $articles = Article::with(['author','category'])->latest()->get();
     return view('articles', ['title' => 'Halaman Beritaku', 'articles' => Article::all()]);
 });
