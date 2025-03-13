@@ -15,7 +15,14 @@ Route::get('/', function () {
     return view('home', ['title' => 'Halaman Awal']);
 });
 Route::get('/profile', function () {
-    return view('profile', ['title' => 'Halaman Profileku']);
+    return view('profile', ['title' => 'Halaman Profileku', 'profile' => 
+    [
+    
+        'nama' => 'LIFE THIS GOOD',
+        'alamat' => 'Bandung',
+        'summary' => '"Hello Bro, this is my page" is a simple introduction, likely indicating a personal or informal webpage. It sets a casual and friendly tone, welcoming visitors to explore the content. 🚀'
+        
+    ]]);
 });
 Route::get('/projek', function () {
     return view('projek', ['title' => 'Halaman Projectku']);
