@@ -77,10 +77,10 @@
                                 const counterElement = document.getElementById("counter");
 
                                 function updateCounter() {
-                                    if (count >= 8) {
+                                    if (count >= 10) {
                                         counterElement.textContent = count + " Jam"; // Menampilkan angka
                                         count--; // Mengurangi angka
-                                        setTimeout(updateCounter, 80); // Kecepatan animasi (50ms)
+                                        setTimeout(updateCounter, 70); // Kecepatan animasi (50ms)
                                     }
                                 }
 
